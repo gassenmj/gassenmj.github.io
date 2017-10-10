@@ -24,7 +24,7 @@ But hey, did You know? You can even write Your comments on Editions (EBR)...chec
 https://docs.oracle.com/database/121/SQLRF/statements_4010.htm#SQLRF01109
 
 Well, and I personally love this SQL Developer Feature:
-if You go Tools -> Preferences -> Shortcut Keys -> search for "Toggle Line Comments" You can make sure You .
+If You go Tools -> Preferences -> Shortcut Keys -> search for "Toggle Line Comments" You are able to define Your own shortcut to comment/uncomment a lot of lines.
 
 I don't know if that still counts as a comment but we might want to talk about the value of nice commit messages when checking code into version control systems.
 For sure there are other useful developer written messages. But nobody RTFM ;-)
