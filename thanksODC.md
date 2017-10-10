@@ -16,7 +16,8 @@ Also some complex SQL queries can get annoying when not having the initial thoug
 
 There is more: Hopefully it is known that commenting on objects is possible, e.g. columns or tables:
 
-```comment on column my_tab.col_a '...this is useful information for any developer'; 
+```
+comment on column my_tab.col_a '...this is useful information for any developer'; 
 comment on table my_tab is '...this is useful information for any developer';
 ```
 
