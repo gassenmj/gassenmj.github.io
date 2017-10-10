@@ -21,8 +21,8 @@ comment on column my_tab.col_a '...this is useful information for any developer'
 comment on table my_tab is '...this is useful information for any developer';
 ```
 
-But hey, did You know? You can even write Your comments on Editions (EBR)...check it out Yourself 
-https://docs.oracle.com/database/121/SQLRF/statements_4010.htm#SQLRF01109
+But hey, did You know? You can even write Your comments on Editions (EBR)...check it out Yourself [in the Oracle Docu](https://docs.oracle.com/database/121/SQLRF/statements_4010.htm#SQLRF01109)
+
 
 Well, and I personally love this SQL Developer Feature:
 If You go Tools -> Preferences -> Shortcut Keys -> search for "Toggle Line Comments" You are able to define Your own shortcut to comment/uncomment a lot of lines.
