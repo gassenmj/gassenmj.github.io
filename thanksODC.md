@@ -12,7 +12,7 @@ For sure there are a lot more aspects to cover, but here is just a quick version
 I love them because developers can prettify code. Also, we hear a lot about best practices. But sometimes in real live they just do not fit to the current situation. 
 Whenever I faced that situation in the past, I tried to force myself to at least provide some quick comments why I chose such an approach in my code.
 
-Also some complex SQL queries can get annoying when not having the initial thoughts of a developer. I try to divide complex queries into some smaller parts. I do a kind of docu for each part of the SQL then by adding comments.
+Also some complex SQL queries can get annoying when not having the initial thoughts of a developer. I try to divide complex queries into some smaller parts. Then I do a kind of docu for each part of the SQL by adding comments.
 
 There is more: Hopefully it is known that commenting on objects is possible, e.g. columns or tables:
 
@@ -31,14 +31,14 @@ I don't know if that still counts as a comment but we might want to talk about t
 For sure there are other useful developer written comments in the official documentation. But nobody RTFM ;-)
 
 There are also the funny aspects: 
-* https://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered
-* https://twitter.com/iamdevloper/status/657130347109351424
+* [https://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered](https://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered)
+* [https://twitter.com/iamdevloper/status/657130347109351424](https://twitter.com/iamdevloper/status/657130347109351424)
 
 I like some quotes, for example You this one by [Martin Fowler](https://en.wikiquote.org/wiki/Martin_Fowler) 
 > "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
 Adding comments might help to improve code quality.
 
-mm...and hey developers! Do not forget to adopt the comment next time when changing the underlying piece of code...that might confuse me! 
+mm...an' hey developers! Don't forget to adopt the comment next time when changing the underlying piece of code...that might confuse me! 
 
 ```--no more comments ;-)```
 
