@@ -27,17 +27,18 @@ Well, and I personally love this SQL Developer Feature:
 If You go Tools -> Preferences -> Shortcut Keys -> search for "Toggle Line Comments" You are able to define Your own shortcut to comment/uncomment a lot of lines.
 
 I don't know if that still counts as a comment but we might want to talk about the value of nice commit messages when checking code into version control systems.
-For sure there are other useful developer written messages. But nobody RTFM ;-)
+For sure there are other useful developer written comments in the official documentation. But nobody RTFM ;-)
 
 There are also the funny aspects: 
 * https://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered
 * https://twitter.com/iamdevloper/status/657130347109351424
 
-There are some quotes I like, for example You this one by [Martin Fowler](https://en.wikiquote.org/wiki/Martin_Fowler) 
+I like some quotes, for example You this one by [Martin Fowler](https://en.wikiquote.org/wiki/Martin_Fowler) 
 > "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+Adding comments might help to improve code quality.
 
-mm...and hey developers! Do not forget to adopt the comment next time when changing the underlying piece of code ;-)...that might confuse me! 
+mm...and hey developers! Do not forget to adopt the comment next time when changing the underlying piece of code...that might confuse me! 
 
-```--no more comments :-)```
+```--no more comments ;-)```
 
 Jonas
