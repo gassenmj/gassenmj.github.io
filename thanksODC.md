@@ -39,3 +39,5 @@ There are some quotes I like, for example You this one by [Martin Fowler](https:
 mm...and hey developers! Do not forget to adopt the comment next time when changing the underlying piece of code ;-)...that might confuse me! 
 
 ```--no more comments :-)```
+
+Jonas
