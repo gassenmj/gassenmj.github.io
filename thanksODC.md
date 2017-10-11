@@ -36,6 +36,7 @@ There are also these funny aspects:
 
 I like some quotes, for example this one by [Martin Fowler](https://en.wikiquote.org/wiki/Martin_Fowler) 
 > "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+
 Adding comments might help to improve code quality.
 
 Mm...and hey developers! Don't forget to adopt the comment next time when changing the underlying piece of code...that might confuse me! 
