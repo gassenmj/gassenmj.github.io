@@ -15,4 +15,4 @@ And thanks to the [company](http://www.syntegris.de) that hired me, I am officia
 
 
 
-^[Beam me up, Scotty](https://gassenmj.github.io)^
+<sup>[Beam me up, Scotty](https://gassenmj.github.io)<sup>
