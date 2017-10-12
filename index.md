@@ -1,4 +1,4 @@
-## Welcome to another Blog about the Oracle Database
+## Index
 
 #### Post 1: [Whoami](https://gassenmj.github.io/whoami)
 
