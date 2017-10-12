@@ -9,6 +9,6 @@ I am a [Basketball Refree](http://www.sv-dreieichenhain.de/abteilungen/basketbal
 
 My Twitter Handle is [@gassenmj](https://twitter.com/gassenmj)
 
-![my_certification](https://raw.githubusercontent.com/gassenmj/gassenmj.github.io/master/img/OCP-ODatebase12c-Adv-plsql-clr.gif)
+And thanks to the [company](http://www.syntegris.de) that hired me, I am officially [certified](https://www.youracclaim.com/badges/d38f381d-6c1f-4fec-aa37-751663412c73) :-)
 
-And thanks to the [company](https://syntegris.de) that hired me, I am officially [certified](https://www.youracclaim.com/badges/d38f381d-6c1f-4fec-aa37-751663412c73) :-)
+![my_certification](https://raw.githubusercontent.com/gassenmj/gassenmj.github.io/master/img/OCP-ODatebase12c-Adv-plsql-clr.gif)
