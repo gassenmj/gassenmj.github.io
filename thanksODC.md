@@ -49,4 +49,4 @@ Jonas
 
 
 
-^[Beam me up, Scotty](https://gassenmj.github.io^
+<sup>[Beam me up, Scotty](https://gassenmj.github.io)<sup>
