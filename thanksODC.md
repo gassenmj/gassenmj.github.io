@@ -24,7 +24,7 @@ comment on table my_tab is '...this is useful information for any developer';
 But hey, did You know? You can even write Your comments on Editions (EBR)...check it out Yourself [in the Oracle Docs](https://docs.oracle.com/database/121/SQLRF/statements_4010.htm#SQLRF01109)
 
 
-Personally, I love this SQL Developer Feature:
+Personally, I love this [SQL Developer](https://www.thatjeffsmith.com/sql-developer/) Feature:
 If You go to Tools -> Preferences -> Shortcut Keys -> search for "Toggle Line Comments" and You are able to define Your own shortcut to comment/uncomment many lines.
 
 ![alt text](https://raw.githubusercontent.com/gassenmj/gassenmj.github.io/master/img/comment.gif)
