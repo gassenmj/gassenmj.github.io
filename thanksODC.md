@@ -1,4 +1,4 @@
-# This is just a ```/* comment */ ```on the ```--comment ```
+# This is just a ```/* comment */ ``` on the ```--comment ```
 ## ...because it is ODC Appreciation Day
 
 Let's use this wonderful [#ThanksODC](https://twitter.com/hashtag/ThanksODC?src=hash) initiative by [Tim Hall](https://oracle-base.com/blog/2017/09/25/odc-appreciation-day-2017-thanksodc/) to do my first blog post.
