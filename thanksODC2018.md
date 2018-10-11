@@ -3,19 +3,19 @@
 It is the time for the [day](https://twitter.com/hashtag/ThanksODC?src=hash) of the year that reminds me I should finally start blogging regularly. Well I guess once a year is also regularly :innocent:. This time I wrote down some thoughts that often come to  my mind when I leave work and ride my bike back home.
 
 ## 1.	“Let’s prove it with a proper test case”
-Here is a funny meeting disease. If up to 8 people in a meeting room discuss about what COULD get wrong, what SHOULD happen or what MIGHT the proper way to go forward with a technical problem. Count me in! I love thinking through problems theoretically. But sometimes enough is said and You simply need to sit down for a few hours and prove or test things with a proper test case.
+Here is a funny meeting disease. If up to 8 people in a meeting room discuss about what COULD get wrong, what SHOULD happen or what MIGHT be the proper way to go forward with a technical problem. Count me in! I love thinking through problems theoretically. But sometimes enough is said and You simply need to sit down and prove or test things with a proper test case.
 
 Not sure if it is only my experience but common problems seem to be :
 * TEST environments up are not up to date. They should at least resemble 90% like prod.
 * Other people ignoring the approach because the test might not be realistic enough.
 * People who think that it is not worth the effort.
 
-It is hard to beat the last two arguments, but something is always better than nothing. Executing the test case or even thinking about setting it up initially sometimes teaches You things that You might not have expected! You learn new things or You simply have a more healthy blood pressure when switching things in PROD.
+It is hard to beat the last two arguments, but something is always better than nothing. Executing the test case or even setting it up teaches You things that You might not have expected! Ideally You learn new things or at least You simply have a more healthy blood pressure when switching things in PROD after the test case wrked :stuck_out_tongue_winking_eye:.
 
 My thoughts are also with the [ask tom team](https://twitter.com/connor_mc_d/status/1036875819379904512)...but that’s a different story :D.
 
 ## 2.	“That sounds like a horrible task. Have You ever thought about automating it?”
-I think about that so often. E.g. I did my first intern at a company that did reporting in financial services. A lot of database guys had the requirement to spool csv files and hand them over to the next department where they would prepare the proper KPIs.
+I think about that so often. E.g. I did my first intern at a company that did reporting in financial services. A lot of database guys had the requirement to spool .csv files and hand them over to the next department where they would prepare the proper KPIs.
 The Oracle DB and all the SQL techniques like analytic functions is made to prepare data in a very efficient way. And no! - most likely the other persons job will not be taken away. IT guys still need the guidance in what the KPIs should actually report. That domain knowledge is still required.
 
 In my current project, we have some smart users that finally started to do their monthly KPIs based on SQL queries and each time they. And no! That does not take my job away. They still need some guidance. Management already wanted to revoke the read privilege from them because even read access might bring a Database down. Oh yeah I am not arguing with that...but if they are smart enough to write SQL queries shouldn’t we build more trust? We should finally accept that even non-IT guys should have a chance to use IT for a better, more performant, time-saving everyday-work life. We can guide them by sharing our knowledge. There are also great resources for SQL beginners:
