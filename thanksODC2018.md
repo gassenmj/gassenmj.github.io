@@ -38,8 +38,8 @@ But still it is sometimes better to take a few breaths before simply copy and pa
 * Nothing is so permanent as a temporary government program. - Milton Friedman
 Milton said that about political decision. But this is something that can be simply transferred into software development. Have You Ever created a table that You planned to drop later on “until the proper solution makes this workaround unnecessary”? It’s the same with a quick copy and paste of code snippets for a bug fix. It works and the pain that users/managers put pressure on You, why things not have been fixed yet are gone. There is nothing wrong with it! But according to Marvin Minsky “You don't understand anything until you learn it more than one way.” So again: What is wrong with taking a few breaths in this fast and complex world trying to understand or learn something in depth?
 
-So both - learning from all the great resources in the internet but at some point consider looking into the official manual - is veeery helpful . 
-By the way: Who else would like to get back the feedback option in the Oracle Docs? https://twitter.com/FranckPachot/status/1049673933472055296
+So both - learning from all the great resources in the internet but at some point consider looking into the official manual - is veeery helpful :-). 
+By the way: [Who else](https://twitter.com/FranckPachot/status/1049673933472055296) would like to get back the feedback option in the Oracle Docs? 
 
 4.	“Developer had time to instrument the code properly from the very first run”
 Here is a common problem
