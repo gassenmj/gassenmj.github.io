@@ -52,7 +52,7 @@ They told us that this is an infrastructure problem. We addressed it internally 
 
 It would have been a completely different story if we hadn’t have any log files by the application. If it simply hangs up we probably would still RDP to the server and recycle/restart/reboot processes without really knowing about the root cause.
 
-## 5.	“That was something we are stuck in TOGETHER. We should JOINTLY solve this issue.”
+## 5.	“That is something where we are stuck in together. We should JOINTLY solve this issue.”
 Cooperation not blaming! If You think about the example in point 2: 
 How it could have worked: We could have blamed the software vendor for not re-opening the connection properly and that their software is shit. The DB Team could have blamed the Windows Admins. Windows Admins could have blamed the network guys,...and on and on and on. No! We did not. In this case we all sat together and each team tried to justify, why they think the issue is not related to their domain. In a lot of cases I see tickets that are pushed from one responsible group to another without really adding a  REASON why the group thinks it is not related to their domain. There is nothing wrong with stating that it is none of Your business 
 
@@ -60,10 +60,9 @@ How it could have worked: We could have blamed the software vendor for not re-op
 
 ..but why not adding a reason { maybe with a test case ;-) } tries to point up Your thoughts.
 
-I am getting more and more frustrated seeing tickets were the list of assigned groups is flip flopping back and forth. With just a small comment that doesn’t add value.
+I am getting more and more frustrated seeing tickets were the list of assigned groups is flip flopping back and forth. With just a small comment that doesn’t add value. 
 
-Once they wanted to change 3 systems that were running for more than 5 years without an issue just because a new system was introduced and couldn’t handle the underlying 3 systems. I wanted to prevent this change and stated that the newly programmed system should be changed instead of the 3 underlying systems that never had an issue before. Addressing it in the new system seemed right to me. I was accused in a conference call that I should stop finger pointing. I made it look as if it was a interpersonally problem. Even if the technical solution might have been a completely right suggestion, the consultants got the impression that I wanted to state that they programmed like shit. It was never my intention, but sometimes I think it is still crucial to express concerns if You have them...it is a different story how to handle the 
-
-Which brings me to the conclusion: 
+Which brings me to the conclusion: Talking to each other, sharing experience, trying to add prove to what You think.
+I never saw sb. in the community biting a newbie for expressing/showing/asking sometiung in the community. 
 
 
