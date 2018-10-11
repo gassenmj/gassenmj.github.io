@@ -58,9 +58,8 @@ Cooperation not blaming! If You think about the example in point 4, here is how 
 
 I am getting more and more frustrated seeing tickets were the list of assigned groups is flip-flopping back and forth. 
 
-Which brings me to the conclusion: Talking to each other, sharing experience, trying to add prove to what You think.
-I never saw sb. in the community biting a newbie for expressing/showing/asking something in the community. 
+Which brings me to the conclusion: Everybody wins if we  are talking to each other, sharing experience, trying to add prove to what we think (no matter if we are right or wrong). I never saw sb. in the community biting a newbie for expressing/showing/asking something. 
 
-Happy to see Your tweets! Which sentence would You like to hear more often?
+## Happy to see Your tweets! Which sentence would You like to hear more often?
 
 <sup>[Beam me up, Scotty](https://gassenmj.github.io)<sup>
