@@ -1,8 +1,6 @@
 # ODC Appreciation Day: Sentences that an Oracle techie should hear more often
 
-It is the time for the [day](https://twitter.com/hashtag/ThanksODC?src=hash) of the year that reminds me I should finally start blogging regularly. Well I guess once a year is also regularly.
-
-I wrote down some thoughts that are often in my mind when I leave work and ride my bike back home. I put them in short sentences
+It is the time for the [day](https://twitter.com/hashtag/ThanksODC?src=hash) of the year that reminds me I should finally start blogging regularly. Well I guess once a year is also regularly :innocent:. This time I wrote down some thoughts that often come to  my mind when I leave work and ride my bike back home.
 
 ## 1.	“Let’s prove it with a proper test case”
 Here is a funny meeting disease. If up to 8 people in a meeting room discuss about what COULD get wrong, what SHOULD happen or what MIGHT the proper way to go forward with a technical problem. Count me in! I love thinking through problems theoretically. But sometimes enough is said and You simply need to sit down for a few hours and prove or test things with a proper test case.
