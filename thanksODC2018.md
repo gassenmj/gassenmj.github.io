@@ -24,7 +24,7 @@ In my current project, we have some smart users that finally started to produce 
 * Free quizzes like [the DEV GYM](https://devgym.oracle.com/pls/apex/f?p=10001:2001::::2001::)
 
 
-## 3.	“I did not simply copy and paste from Stack overflow, I read the manual first.”
+## 3.	“I did not simply copy and paste from Stack Overflow, I read the manual first.”
 
 Maaaan, this is the part where I have to thank the great OTN community! All the blogs and tweets about issues You solved and provided Your code. I am a script kiddie! All those code snippets are so damn helpful. 
 But still, it is sometimes better to take a few breaths before simply copy and pasting code into Your environment.
