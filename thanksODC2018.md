@@ -4,7 +4,7 @@ It is the time for the [day](https://twitter.com/hashtag/ThanksODC?src=hash) of 
 
 I wrote down some thoughts that are often in my mind when I leave work and ride my bike back home. I put them in short sentences
 
-1.	“Let’s prove it with a proper test case”
+## 1.	“Let’s prove it with a proper test case”
 Here is a funny meeting disease. If up to 8 people in a meeting room discuss about what COULD get wrong, what SHOULD happen or what MIGHT the proper way to go forward with a technical problem. Count me in! I love thinking through problems theoretically. But sometimes enough is said and You simply need to sit down for a few hours and prove or test things with a proper test case.
 
 Not sure if it is only my experience but common problems seem to be :
@@ -16,7 +16,7 @@ It is hard to beat the last two arguments, but something is always better than n
 
 My thoughts are also with the [ask tom team](https://twitter.com/connor_mc_d/status/1036875819379904512)...but that’s a different story :D.
 
-2.	“That sounds like a horrible task. Have You ever thought about automating it?”
+## 2.	“That sounds like a horrible task. Have You ever thought about automating it?”
 I think about that so often. E.g. I did my first intern at a company that did reporting in financial services. A lot of database guys had the requirement to spool csv files and hand them over to the next department where they would prepare the proper KPIs.
 The Oracle DB and all the SQL techniques like analytic functions is made to prepare data in a very efficient way. And no! - most likely the other persons job will not be taken away. IT guys still need the guidance in what the KPIs should actually report. That domain knowledge is still required.
 
@@ -26,7 +26,7 @@ In my current project, we have some smart users that finally started to do their
 * Free quizzes like [the DEV GYM](https://devgym.oracle.com/pls/apex/f?p=10001:2001::::2001::)
 
 
-3.	“I did not simply copy and paste from Stack overflow, I read the manual first.”
+## 3.	“I did not simply copy and paste from Stack overflow, I read the manual first.”
 
 Maaaan, this is the part where I have to thank all the great OTN community that blog and tweet regularly about issues they solved and provided their code. I admit I am a script kiddie! All those code snippets are so damn helpful. 
 But still it is sometimes better to take a few breaths before simply copy and pasting code into Your environment.
@@ -41,7 +41,7 @@ Milton said that about political decision. But this is something that can be sim
 So both - learning from all the great resources in the internet but at some point consider looking into the official manual - is veeery helpful :-). 
 By the way: [Who else](https://twitter.com/FranckPachot/status/1049673933472055296) would like to get back the feedback option in the Oracle Docs? 
 
-4.	“Developer had time to instrument the code properly from the very first run”
+## 4.	“Developer had time to instrument the code properly from the very first run”
 Here is a common problem
 We had a .NET code hosted on a Windows Server. There is SQLPLUS installed and which handles the connection to the DB. The Windows Server is a VM hosted on an ESX machine. Suddenly, the .net Code hung up during the weekend recurrently.
 It turned out to be a bandwidth problem. Windows thought there is 1GB but ESX/Switches only allowed a traffic max. capacity of 100 MB. At the weekend a full backup is taken, which takes away the full capacity.
@@ -52,7 +52,7 @@ They told us that this is an infrastructure problem. We addressed it internally 
 
 It would have been a completely different story if we hadn’t have any log files by the application. If it simply hangs up we probably would still RDP to the server and recycle/restart/reboot processes without really knowing about the root cause.
 
-5.	“That was something we are stuck in TOGETHER. We should JOINTLY solve this issue.”
+## 5.	“That was something we are stuck in TOGETHER. We should JOINTLY solve this issue.”
 Cooperation not blaming! If You think about the example in point 2: 
 How it could have worked: We could have blamed the software vendor for not re-opening the connection properly and that their software is shit. The DB Team could have blamed the Windows Admins. Windows Admins could have blamed the network guys,...and on and on and on. No! We did not. In this case we all sat together and each team tried to justify, why they think the issue is not related to their domain. In a lot of cases I see tickets that are pushed from one responsible group to another without really adding a  REASON why the group thinks it is not related to their domain. There is nothing wrong with stating that it is none of Your business 
 
