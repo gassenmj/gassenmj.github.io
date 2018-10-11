@@ -63,4 +63,4 @@ I never saw sb. in the community biting a newbie for expressing/showing/asking s
 
 Happy to see Your tweets! Which sentence would You like to hear more often?
 
-
+<sup>[Beam me up, Scotty](https://gassenmj.github.io)<sup>
