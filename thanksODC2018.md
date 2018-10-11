@@ -59,7 +59,7 @@ Cooperation not blaming! If You think about the example in point 4, here is how 
 I am getting more and more frustrated seeing tickets were the list of assigned groups is flip-flopping back and forth. 
 
 Which brings me to the conclusion: Talking to each other, sharing experience, trying to add prove to what You think.
-I never saw sb. in the community biting a newbie for expressing/showing/asking sometiung in the community. 
+I never saw sb. in the community biting a newbie for expressing/showing/asking something in the community. 
 
 Happy to see Your tweets! Which sentence would You like to hear more often?
 
