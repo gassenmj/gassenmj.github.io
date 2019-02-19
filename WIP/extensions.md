@@ -41,8 +41,6 @@ var CopyFormatter  = Java.type("oracle.dbtools.raptor.format.CopyFormatter")
 var FormatRegistry = Java.type("oracle.dbtools.raptor.format.FormatRegistry")
 var NLSUtils       = Java.type("oracle.dbtools.raptor.utils.NLSUtils");
 var tst            = Java.type("oracle.dbtools.versions.SQLclVersion");
-var colName        = Java.type("oracle.dbtools.raptor.query.Column");
-
 
 //limit of return
 //ResultSetFormatter.setMaxRows(3);
@@ -52,12 +50,17 @@ var commaPrint     = true;
 
 var cmd = {};
 	cmd.rownum = 0;
-	cmd.start       = function() { 
-	    ctx.write("--*** TEST!! *** THIS IS MY FIRST CUSTOM FORMAT in " + tst.getSQLclVersion() + "\n\n"); 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	cmd.start = function() { 
+	    //This is not relevant for output, it just shows some other calls to the hook
+		ctx.write("--*** TEST!! *** THIS IS MY FIRST CUSTOM FORMAT in " + tst.getSQLclVersion() + "\n\n"); 
+		ctx.write("--"+NLSUtils.getSessionTimeZone(conn)+ "\n\n");
+
+		//This is relevant for output
 	    ctx.write("WITH tst_data as (\n");
-		//ctx.write("TST" + colName.getID());
 	}
-	cmd.startRow    = function() { 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	cmd.startRow = function() { 
 	    
 		if (shouldPrint) {
 		ctx.write("select  ");	
@@ -65,9 +68,9 @@ var cmd = {};
 		
 		commaPrint = true;
 	}
- 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	cmd.printColumn = function(val,view,model) {
-	  
+
 	    if (shouldPrint) {	
 			if (commaPrint) {
 				commaPrint = false;
@@ -76,14 +79,15 @@ var cmd = {};
 			}
 
 			try{
+				//this is the actual data returned by the query
 			 var v  = NLSUtils.getValue(conn,val);
 			 ctx.write("'" + v + "'");
-			 //ctx.write(NLSUtils.getSessionTimeZone(conn));
 			} catch(e){
 				ctx.write(e);
 			}
 		}
 	} 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	cmd.endRow = function () {
 		cmd.rownum++;
 		j = "";
@@ -91,8 +95,6 @@ var cmd = {};
 		 j = " from dual ";
 		}
 		try{
-			 //args is read from script...not from sqlformat cmd
-			 //i = args[1];
 		}catch(e){
 			 ctx.write(e);
 			}
@@ -107,8 +109,9 @@ var cmd = {};
 		}
 		
 		ctx.write(j);
-	} 
-	cmd.end    = function () {
+	}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	cmd.end = function () {
 		ctx.write("\n) select * from tst_data; \n"); 
 		//reset for next execution
 		cmd.rownum = 0;
