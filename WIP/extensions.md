@@ -30,11 +30,113 @@ select ... from dual
 )
 select * from tst_data;
 ```
-
+Dev 1 can now go ahead an copy that output and send it over to Dev 2 who can work on fancy SQL statements like [json_object](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/adjsn/generation.html#GUID-1084A518-A44A-4654-A796-C1DD4D8EC2AA), [pivot](https://blogs.oracle.com/sql/how-to-convert-rows-to-columns-and-back-again-with-sql-aka-pivot-and-unpivot) or [hierarchical queries](https://asktom.oracle.com/pls/apex/f?p=100:11:0::::P11_QUESTION_ID:489772591421). To teach Dev 1 some funny SQL stuff.
+Man,...did You notice that link about connect by is from 2011??...phew.
 
 ## How I build my custom SQLFORMAT
  Let's check the code.
 
+```
+var CopyFormatter  = Java.type("oracle.dbtools.raptor.format.CopyFormatter")
+var FormatRegistry = Java.type("oracle.dbtools.raptor.format.FormatRegistry")
+var NLSUtils       = Java.type("oracle.dbtools.raptor.utils.NLSUtils");
+var tst            = Java.type("oracle.dbtools.versions.SQLclVersion");
+var colName        = Java.type("oracle.dbtools.raptor.query.Column");
+
+
+//limit of return
+//ResultSetFormatter.setMaxRows(3);
+var i=3;
+var shouldPrint    = true;
+var commaPrint     = true;
+
+var cmd = {};
+	cmd.rownum = 0;
+	cmd.start       = function() { 
+	    ctx.write("--*** TEST!! *** THIS IS MY FIRST CUSTOM FORMAT in " + tst.getSQLclVersion() + "\n\n"); 
+	    ctx.write("WITH tst_data as (\n");
+		//ctx.write("TST" + colName.getID());
+	}
+	cmd.startRow    = function() { 
+	    
+		if (shouldPrint) {
+		ctx.write("select  ");	
+		}
+		
+		commaPrint = true;
+	}
+ 
+	cmd.printColumn = function(val,view,model) {
+	  
+	    if (shouldPrint) {	
+			if (commaPrint) {
+				commaPrint = false;
+			}else{
+				ctx.write(",");		
+			}
+
+			try{
+			 var v  = NLSUtils.getValue(conn,val);
+			 ctx.write("'" + v + "'");
+			 //ctx.write(NLSUtils.getSessionTimeZone(conn));
+			} catch(e){
+				ctx.write(e);
+			}
+		}
+	} 
+	cmd.endRow = function () {
+		cmd.rownum++;
+		j = "";
+		if (shouldPrint) {
+		 j = " from dual ";
+		}
+		try{
+			 //args is read from script...not from sqlformat cmd
+			 //i = args[1];
+		}catch(e){
+			 ctx.write(e);
+			}
+		
+		if (cmd.rownum > i) {
+			if (shouldPrint){
+              shouldPrint = false;
+			  commaPrint = false;
+			}
+		} else {
+			j= j + " union all \n";
+		}
+		
+		ctx.write(j);
+	} 
+	cmd.end    = function () {
+		ctx.write("\n) select * from tst_data; \n"); 
+		//reset for next execution
+		cmd.rownum = 0;
+		shouldPrint = true;
+	}
+    cmd.type = function() {
+    	return "withCl";
+  	}
+ 
+    cmd.ext = function() {
+    	return ".withCl";
+  	}
+// Actual Extend of the Java CommandListener
+var withClauseFormat = Java.extend(CopyFormatter, {
+		start: 		 cmd.start,
+		startRow: 	 cmd.startRow,
+		printColumn: cmd.printColumn,
+		endRow: 	 cmd.endRow ,
+        end: 		 cmd.end,
+        getType: 	 cmd.type,
+        getExt: 	 cmd.ext, 
+        setTableName: function(){}
+ 
+});
+ 
+// Registering the new Command
+FormatRegistry.registerFormater(new withClauseFormat());
+```
 
 Now let's go through that whole thing step by step :-).
 
