@@ -21,7 +21,7 @@ select * from tab;
 ```
 
 The result looks like the following:
-```
+```sql
 WITH tst_data as (
 select ... from dual union all 
 select ... from dual union all 
@@ -36,7 +36,7 @@ Man,...did You notice that link about connect by is from 2011??...phew.
 ## How I build my custom SQLFORMAT
  Let's check the code.
 
-```
+```javascript
 var CopyFormatter  = Java.type("oracle.dbtools.raptor.format.CopyFormatter")
 var FormatRegistry = Java.type("oracle.dbtools.raptor.format.FormatRegistry")
 var NLSUtils       = Java.type("oracle.dbtools.raptor.utils.NLSUtils");
