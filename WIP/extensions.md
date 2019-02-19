@@ -34,7 +34,8 @@ Dev 1 can now go ahead an copy that output and send it over to Dev 2 who can wor
 Man,...did You notice that link about connect by is from 2011??...phew.
 
 ## How I build my custom SQLFORMAT
- Let's check the code.
+ Let's check the code. Every Javascript Guru will notice that a newbie was doing that job...:D
+ Anyway - it does the trick. I am happy to see Your comments!
 
 ```javascript
 var CopyFormatter  = Java.type("oracle.dbtools.raptor.format.CopyFormatter")
@@ -141,7 +142,25 @@ var withClauseFormat = Java.extend(CopyFormatter, {
 FormatRegistry.registerFormater(new withClauseFormat());
 ```
 
-Now let's go through that whole thing step by step :-).
+Now let's quickly go through that whole thing:
+
+cmd is the object that is enriched with a couple of values. cmd will later be passed to the native java code of SQLcl.
+It is as simple as that You can just enhance the output at 5 different spots of returned table row:
+ 
+start
+startRow
+printColumn
+endRow
+end
+
+Have a look at 
+var v  = NLSUtils.getValue(conn,val); 
+with the help of that You have access to the returned data.
+
+Everything else is just the logic to add some custom output :-).
+
+Here is an additional tipp that helped me to understand what's going on:
+I installed Eclipse and imported the sqlcl folder as a library...You will have the chance to check the jars for some classes that might be exposed in that Java CommandListener. 
 
 ## Happy to see Your [tweets](https://twitter.com/gassenmj/)
 
