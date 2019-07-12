@@ -1,4 +1,10 @@
-'''
+# SQL*Plus Hash Command
+## This is just a qicky about how I use the Hash Command in SQL*Plus for my Demos
+
+Here is some example code
+
+```
+Let's use 
 --Demo WITHOUT # 
 
 pause
@@ -76,6 +82,7 @@ from dual;
 #cl scr
 end;
 /
-'''
+```
+Here is how I use it in SQL*Plus. Unfortunately, when I recently tried to switch to SQLcl the script failed.
 
 ![alt text](https://raw.githubusercontent.com/gassenmj/gassenmj.github.io/master/img/sql.gif)
