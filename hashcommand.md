@@ -4,7 +4,6 @@
 Here is some example code
 
 ```
-Let's use 
 --Demo WITHOUT # 
 
 pause
