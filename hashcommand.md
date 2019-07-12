@@ -83,6 +83,6 @@ from dual;
 end;
 /
 ```
-Here is how I use it in SQL*Plus. Unfortunately, when I recently tried to switch to SQLcl the script failed.
+Here is how I execute it in SQL*Plus. Unfortunately, when I recently tried to switch to SQLcl the script failed.
 
 ![alt text](https://raw.githubusercontent.com/gassenmj/gassenmj.github.io/master/img/sql.gif)
