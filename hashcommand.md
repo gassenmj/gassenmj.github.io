@@ -1,5 +1,5 @@
 # SQL*Plus Hash Command
-## This is just a qicky about how I use the Hash Command in SQL*Plus for my Demos
+## This is just a quicky about how I use the Hash Command in SQL*Plus for my Demos
 
 Here is some example code
 
